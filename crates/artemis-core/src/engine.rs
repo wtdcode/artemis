@@ -75,7 +75,7 @@ where
     /// The core run loop of the engine. This function will spawn a thread for
     /// each collector, strategy, and executor. It will then orchestrate the
     /// data flow between them.
-    pub async fn run(self) -> Result<JoinSet<()>, Box<dyn std::error::Error>> {
+    pub async fn run(self) -> Result<JoinSet<()>, color_eyre::Report> {
         let (event_sender, _): (Sender<E>, _) = broadcast::channel(self.event_channel_capacity);
         let (action_sender, _): (Sender<A>, _) = broadcast::channel(self.action_channel_capacity);
 
