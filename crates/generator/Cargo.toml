@@ -8,7 +8,7 @@ edition = "2021"
 [dependencies]
 quote = "1.0.27"
 clap = { version = "4.2.5", features = ["derive"] }
-anyhow = "1.0.70"
+color-eyre = "0.6"
 convert_case = "0.6.0"
 
 

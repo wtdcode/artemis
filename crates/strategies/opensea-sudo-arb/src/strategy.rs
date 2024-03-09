@@ -11,7 +11,7 @@ use tracing::info;
 
 use crate::constants::FACTORY_DEPLOYMENT_BLOCK;
 use crate::types::Config;
-use anyhow::Result;
+use color_eyre::Result;
 use artemis_core::collectors::block_collector::NewBlock;
 use artemis_core::collectors::opensea_order_collector::OpenseaOrder;
 use artemis_core::executors::mempool_executor::{GasBidInfo, SubmitTxToMempool};

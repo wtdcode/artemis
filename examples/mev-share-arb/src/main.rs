@@ -1,6 +1,6 @@
 use std::sync::Arc;
 
-use anyhow::Result;
+use color_eyre::Result;
 use artemis_core::{
     collectors::mevshare_collector::MevShareCollector,
     engine::Engine,

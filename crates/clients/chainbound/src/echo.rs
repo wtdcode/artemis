@@ -1,6 +1,6 @@
 use std::{sync::Arc, time::Duration};
 
-use anyhow::{anyhow, Result};
+use color_eyre::{eyre::eyre, Result};
 use async_trait::async_trait;
 use ethers::{providers::Middleware, signers::Signer};
 use reqwest::{
@@ -86,7 +86,7 @@ where
     /// Send a bundle to transactions to the specified builders
     async fn execute(&self, mut action: SendBundleArgs) -> Result<()> {
         if action.unsigned_txs.is_empty() {
-            return Err(anyhow!(
+            return Err(eyre!(
                 "Bundle must contain at least one transaction. 
                 To cancel a bundle, use the `eth_cancelBundle` method."
             ));

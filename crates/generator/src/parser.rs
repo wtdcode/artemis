@@ -1,4 +1,5 @@
-use anyhow::{Error, Result};
+use color_eyre::Result;
+use color_eyre::Report as Error;
 use clap::{Parser, ValueHint};
 use convert_case::{Case, Casing};
 use quote::__private::TokenStream;

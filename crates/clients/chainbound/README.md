@@ -23,7 +23,7 @@ chainbound-artemis = { git = "https://github.com/paradigmxyz/artemis.git" }
 # the following dependencies are also used in this example
 ethers = {  version = "2", features = ["ws", "rustls"] }
 tokio = { version = "1.18", features = ["full"] }
-anyhow = "1.0.70"
+color-eyre = "0.6"
 ```
 
 Then, in your `main.rs`:

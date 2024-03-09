@@ -7,7 +7,7 @@ edition = "2021"
 
 [dependencies]
 
-anyhow = "1.0.70"
+color-eyre = "0.6"
 generator = { path = "../../crates/generator" }
 clap = { version = "4.2.5", features = ["derive"] }
 

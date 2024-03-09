@@ -1,4 +1,4 @@
-use anyhow::Result;
+use color_eyre::Result;
 use clap::Parser;
 use ethers::types::H160;
 use opensea_v2::client::{OpenSeaApiConfig, OpenSeaV2Client};

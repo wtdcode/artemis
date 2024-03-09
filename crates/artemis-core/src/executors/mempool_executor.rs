@@ -4,7 +4,7 @@ use std::{
 };
 
 use crate::types::Executor;
-use anyhow::{Context, Result};
+use color_eyre::{eyre::Context, Result};
 use async_trait::async_trait;
 use ethers::{
     providers::Middleware,

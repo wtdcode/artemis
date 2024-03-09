@@ -16,7 +16,7 @@ opensea-v2 = { path = "../../clients/opensea-v2" }
 async-trait = "0.1.64"
 
 ## misc
-anyhow = "1.0.70"
+color-eyre = "0.6"
 tracing = "0.1.37"
 
 

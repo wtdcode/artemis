@@ -5,7 +5,7 @@ use std::sync::Arc;
 
 use async_trait::async_trait;
 
-use anyhow::Result;
+use color_eyre::Result;
 use artemis_core::types::Strategy;
 
 use ethers::signers::Signer;
