@@ -9,19 +9,19 @@ use crate::types::{Collector, Executor, Strategy};
 /// data flow between collectors, strategies, and executors.
 pub struct Engine<E, A> {
     /// The set of collectors that the engine will use to collect events.
-    collectors: Vec<Box<dyn Collector<E>>>,
+    pub collectors: Vec<Box<dyn Collector<E>>>,
 
     /// The set of strategies that the engine will use to process events.
-    strategies: Vec<Box<dyn Strategy<E, A>>>,
+    pub strategies: Vec<Box<dyn Strategy<E, A>>>,
 
     /// The set of executors that the engine will use to execute actions.
-    executors: Vec<Box<dyn Executor<A>>>,
+    pub executors: Vec<Box<dyn Executor<A>>>,
 
     /// The capacity of the event channel.
-    event_channel_capacity: usize,
+    pub event_channel_capacity: usize,
 
     /// The capacity of the action channel.
-    action_channel_capacity: usize,
+    pub action_channel_capacity: usize,
 }
 
 impl<E, A> Engine<E, A> {
